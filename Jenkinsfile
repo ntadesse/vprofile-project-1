@@ -11,12 +11,11 @@ pipeline {
         NEXUSPASS = 'admin123'
         RELEASE_REPO = 'vprofile-release'
         CENTRAL_REPO = 'vpro-maven-central'
-        NEXUS_IP = '172.31.82.73'
-        NEXUS_PORT = '8081'
-        NEXUS_REPOSITORY = "vprofile-release"
-	    NEXUS_GRP_REPO = "vprofile-maven-group"
-        NEXUS_LOGIN = "nexuslogin"
-        ARTVERSION = "${env.BUILD_ID}"
+        NEXUSIP = '172.31.82.73'
+        NEXUSPORT = '8081'
+        NEXUS_REPOSITORY = 'vprofile-release'
+	    NEXUS_GRP_REPO = 'vprofile-maven-group'
+        NEXUS_LOGIN = 'nexuslogin'
     }
 	
     stages{
