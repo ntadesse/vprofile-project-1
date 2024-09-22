@@ -79,12 +79,12 @@ pipeline {
              version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
              repository: "${RELEASE_REPO}",
              credentialsId: "${NEXUS_LOGIN}",
-             artifact {
-                artifactId: 'vproapp',
-                type: 'war',
+             artifact [
+                [artifactId: 'vproapp',
                 classifier: '',
-                file: 'target/vprofile-v2.war'
-            }
+                file: 'target/vprofile-v2.war',
+                type: 'war']
+             ]
           }
         }
     }
