@@ -99,7 +99,7 @@ pipeline {
                 echo 'Slack Notifications.'
                 slackSend channel: '#jenkinsci',
                     color: COLOR_MAP[currentBuild.currentResult],
-                    massage: "*${currentBuild.currentResult}:*Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} \n"
+                    message: "*${currentBuild.currentResult}:*Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} \n"
         }
     }
 
