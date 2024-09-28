@@ -3,7 +3,7 @@ LABEL "Project"="Vprofile"
 LABEL "Author"="Natnael"
 RUN apt update && apt install maven -y
 RUN git clone -b cicd-jenkins https://github.com/ntadesse/vprofile-project-1.git
-RUN cd vprofile-project && mvn install
+RUN cd vprofile-project-1 && git checkout cicd-jenkins && mvn install
 
 FROM tomcat:9-jre11
 
