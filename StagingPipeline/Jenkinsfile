@@ -24,8 +24,8 @@ pipeline {
         SONARSERVER = 'sonarserver'
         SONARSCANER = 'sonarscanner'
         registryCredential = 'ecr.us-east-1.awscred'
-        appRegistry = '815098417354.dkr.ecr.us-east-1.amazonaws.com/vprocontimg'
-        vprofileRegistry = 'https://815098417354.dkr.ecr.us-east-1.amazonaws.com'
+        appRegistry = '815098417354.dkr.ecr.us-east-1.amazonaws.com/vproappimg'
+        vprofileRegistry = "https://815098417354.dkr.ecr.us-east-1.amazonaws.com"
 
     }
 	
