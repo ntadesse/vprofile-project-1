@@ -58,8 +58,6 @@ pipeline {
             withSonarQubeEnv("${SONARSERVER}") {
                sh '''${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=vprofile-rework \
                    -Dsonar.projectName=vprofile-rework \
-                   -Dsonar.host.url=http://172.31.90.154 \
-                   -Dsonar.login=66038f7b82bc3d2319a57f0a3ff49564ad1613ab
                    -Dsonar.projectVersion=1.0 \
                    -Dsonar.sources=src/ \
                    -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/ \
